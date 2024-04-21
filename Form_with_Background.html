@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My===LogIN</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+	 
+		}
+		body
+		{
+			background-color:skyblue;
+			background:url(bg.jpg) no-repeat;
+			background-size: cover;
+
+		}
+		.site-content{
+
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			padding: 60px 100px 100px;
+			overflow-y: scroll;
+		}
+		.site-content form{
+			width: 320px;
+			background-color:rgba(255, 255, 255, 0.226);
+			/* background: transparent; */
+			padding: 30px;
+			border: 1px solid #ccc;
+			border-radius: 7px;
+			box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			overflow: hidden;
+		 
+
+		}
+		.site-content form h2{
+			text-align: center;
+			color:indianred;
+			margin-bottom: 20px;
+			######border-bottom: 6px solid #4caf50;
+			font-size: 2rem;
+			color: #fff;
+			background-color: transparent;
+		}
+	.site-content form input,button{
+		display: block;
+		border: 2px solid #ccc;
+		width: 100%;
+		padding: 8px;
+		margin: 5px auto;
+		
+	}
+ 
+	.site-content form input{
+		border: none;
+		outline: none;
+		border-bottom: 6px solid #fff;
+		background-color: transparent;
+		font-size: 23px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top: -5px;
+
+	}
+	.site-content form input::placeholder{
+		color: #fff;
+		font-size: 1.2rem;
+	}
+	.site-content form button{
+		background-color:blue;
+		color: #fff;
+		border: none;
+		outline: none;
+		border-radius: 4px;
+		font-weight: bold;
+		font-size: 1.0rem;
+	}
+	.site-content form button:hover{
+		opacity:.7;
+		cursor: pointer;
+	}
+	.site-content form input[type=text],
+	.site-content form input[type=password]
+	{
+		font-size: 1.0rem;
+	}
+	 
+	</style>
+</head>
+<body>
+ 
+<div class="site-content">
+	<form action="#" method="POST">
+	 	<h2>Welcome user</h2><br>
+		 
+		<input type="text" id="username" name="username" placeholder="Enter Username"><br/>
+ 		<input type="password" id="password" name="password" placeholder="Enter Password"><br/>
+		<button type="submit">LOGIN</button><br/>
+		<div class="cont" style="background-color:transparent; color: white;"> 
+			<p>Forgot Password? <a href="#">Register Here</a></p>
+		</div>
+			
+	</form>
+</div>
+</body>
+</html>
